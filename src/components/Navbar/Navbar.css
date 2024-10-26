@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    height: 90px;
+    border-bottom: 3px solid #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+  /* After the scroll navbar css */
+position: relative; 
+  transition: top 0.3s;
+  }
+  .sticky {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .logo img {
+    height: 90px;
+    width: auto;
+    padding: 5px;
+  }
+  
+  .ul ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ul ul li {
+    position: relative;
+  }
+  
+  .ul ul li a {
+    text-decoration: none;
+    color: #000;
+    /* padding: 10px 15px; */
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .ul ul li a:hover {
+    color: #4397FC;
+  }
+  
+  .ul ul li i {
+    margin-left: 5px;
+    color: #000;
+  }
+  
+  .ul ul li:hover i {
+    color: #4397FC;
+  }
+  
+  .btns {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btns button {
+    background-color: #187CDD;
+    color: #fff;
+    border: none;
+    border-radius: 300px;
+    padding: 4px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btns button:hover {
+    background-color: #4397FC;
+  }
+  
+  .btns button:first-child {
+    background-color: transparent;
+    color: #187CDD;
+    border: 2px solid #187CDD;
+  }
+  
+  .btns button:first-child:hover {
+    background-color: #4397FC;
+    color: #03344d;
+  }
+

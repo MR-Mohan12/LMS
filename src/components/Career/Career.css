@@ -1,0 +1,94 @@
+   .career {
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    
+  }
+  
+  .career h1 {
+
+    margin-left: 65px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+.content-career{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+  .career-about {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
+
+  }
+  
+  .career-about div {
+    width: 280px; 
+    height: auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: white; */
+  }
+  
+  .career-about div img {
+    width: 80px; 
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .career-about div h1 {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0px 0;
+  }
+  
+  .career-about div p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  .counsel-btn {
+    margin-top: 40px;
+  }
+  
+  .counsel-btn button {
+    /* padding: 6px 23px; */
+    padding: 6px 22px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #187CDD;
+    border: 2px solid #187CDD;
+    font-weight: 700;
+  }
+  
+  .counsel-btn button i {
+    font-size: 1rem;
+  }
+  
+  .counsel-btn button:hover {
+    background-color: #187CDD;
+    color: white;
+  }
+  

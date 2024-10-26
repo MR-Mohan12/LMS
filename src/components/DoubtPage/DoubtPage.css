@@ -1,0 +1,141 @@
+.doubtPage {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+ 
+  .doubtpage-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .doubtpage-text h2 {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .doubtpage-text h1 {
+     text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .doubtpage-text input.email {
+   
+    padding: 10px 15px; 
+    width: 500px; 
+    border: none;
+    color: #000;
+    border-radius: 20px; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+    border: 2px solid #187CDD;
+  } 
+  
+   .doubtpage-text input[type="submit"] {
+    padding: 10px 35px; 
+    font-size: 16px;
+    background: linear-gradient(90deg, #007BFF, #00AFFF);
+    /* background-color: #187CDD; */
+    color: #000;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 2px solid #187CDD;
+    border-radius: 24px;
+  }
+  
+  .doubtpage-text input[type="submit"]:hover {
+    background-color: #187CDD; 
+   
+  }
+  
+
+
+
+  .doubtquestion {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .leftside h1 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .leftside span {
+    color: #00bcd4;
+  }
+
+  .rightside {
+    width: 70%;
+  }
+  .faq-item h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px 0;
+  }
+  
+  .faq-item h1 i {
+    margin-right: 10px;
+  }
+
+    
+  .faq-item p {
+    margin-left: 15px;
+    color: #777;
+    line-height: 1.2;
+  }
+
+  .a {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #00bcd4;
+  }
+ 
+.contact-doubt {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #EAF2FF;
+    width: 90%; 
+    padding: 8px; 
+    border-radius: 12px;
+    border: 2px solid #2690f9;
+    /* border-radius: 0px;  */
+  }
+
+  .contact-doubt h1 {
+    font-size: 22px;
+    color: #000; 
+    margin: 0; 
+  }
+  
+
+  .contact-doubt button {
+    padding: 8px 23px; 
+    background-color: #0a8ea0;
+    color: #fff;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+  }
+  
+  /* Button Hover */
+  .contact-doubt button:hover {
+    background-color: #00a5bb; 
+    color: #fff; 
+  }
+  
+/*  */
+  

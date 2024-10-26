@@ -1,0 +1,54 @@
+.top {
+  width: 100%;
+  height: 55px;
+  background-color: #03344d;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0 2px; */
+  padding-left: 350px;
+}
+
+
+.second,
+.third {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.item, 
+.third,
+ a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 12px;
+    /* padding: 0 2px; */
+}
+
+
+a:hover {
+  color: #4397FC;
+  text-decoration: underline;
+}
+
+.fa-whatsapp {
+  color: #25d366;
+}
+
+.fa-envelope {
+  color: #ff5722;
+}
+
+.fa-phone {
+  color: blue;
+}
+
+.separator {
+  color: #fff;
+  margin: 0 10px;
+}

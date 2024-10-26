@@ -1,0 +1,63 @@
+.desgin-page {
+    /* max-width: 1100px; */
+  width: 90vw;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  
+  .desgin-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .desgin-img {
+    flex: 1; 
+  }
+  
+  .desgin-img img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    /* margin-right: 50px; */
+  }
+  
+  .desgin-text {
+    flex: 2; 
+    text-align: left;
+    padding-left: 150px;
+  }
+  
+  .desgin-text h1 {
+    font-size: 28px;
+    /* margin-bottom: 12px; */
+  }
+  
+  .desgin-text p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .desgin-text a {
+    display: inline-block;
+    color: #00bcd4;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .desgin-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .fa-arrow-right {
+    margin-left: 5px;
+  }
