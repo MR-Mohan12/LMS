@@ -1,5 +1,5 @@
-   .reviews-carousel {
-    width: 90%;
+ 
+ .reviews-carousel {    width: 90%;
     margin: auto;
     padding: 40px 0;
     background-color: #f9f9f9;
@@ -15,10 +15,10 @@
     color: #333;
 }
 
-
 .review-card {
-    width: 200px; 
-    height: 140px; 
+    width: 100%;
+    max-width: 300px; 
+    height: auto; 
     border-radius: 10px;
     padding: 20px;
     background-color: #F0F0F0;
@@ -27,9 +27,7 @@
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
-    /* z-index: ;  */
 }
-
 
 .slick-slide {
     padding: 0 10px; 
@@ -37,7 +35,8 @@
 }
 
 .slick-list {
-    margin: 0 -10px; }
+    margin: 0 -10px; 
+}
 
 .review-content h2 {
     font-size: 18px;
@@ -60,14 +59,37 @@
     color: #00bcd4;
 }
 
-.dot {
-    background-color: #00bcd4; 
-    transition: background-color 0.3s ease; 
-    /* padding: 5px; */
-    width: 10px; /* Adjust size as needed */
-    height: 10px;
+.slick-dots {
+    position: relative;
+    bottom: -20px; 
 }
 
-.active-dot {
-    background-color: #00bcd4; 
+@media (max-width: 768px) {
+    .reviews-carousel h1 {
+        font-size: 28px; 
+        text-align: center; 
+    }
+
+    .review-card {
+        max-width: 90%; 
+        margin: 0 auto; 
+    }
 }
+
+@media (max-width: 480px) {
+    .reviews-carousel h1 {
+        font-size: 24px; 
+    }
+
+    .review-card {
+        padding: 15px; 
+    }
+
+    .review-content h2 {
+        font-size: 16px; 
+    }
+
+    .review-content p {
+        font-size: 14px; 
+    }
+} 

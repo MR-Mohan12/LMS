@@ -61,3 +61,80 @@
   .fa-arrow-right {
     margin-left: 5px;
   }
+
+
+
+/* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .desgin-page {
+      padding: 15px; 
+  }
+
+  h1 {
+      font-size: 28px; 
+  }
+
+  .desgin-section {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .desgin-img {
+      margin-bottom: 20px;
+  }
+
+  .desgin-text {
+      padding-left: 0; 
+      text-align: center; 
+  }
+
+  .desgin-text h1 {
+      font-size: 24px; 
+  }
+
+  .desgin-text p {
+      font-size: 14px; 
+  }
+
+  .desgin-text a {
+      font-size: 15px; 
+  }
+}
+
+/* Styles for phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .desgin-page {
+      padding: 10px; 
+  }
+
+  h1 {
+      font-size: 24px; 
+  }
+
+  .desgin-section {
+      flex-direction: column;
+      align-items: center; 
+  }
+
+  .desgin-img {
+      max-width: 100%; 
+      margin-bottom: 10px; 
+  }
+
+  .desgin-text {
+      padding-left: 0; 
+      text-align: center; 
+  }
+
+  .desgin-text h1 {
+      font-size: 20px; 
+  }
+
+  .desgin-text p {
+      font-size: 13px; 
+  }
+
+  .desgin-text a {
+      font-size: 14px; 
+  }
+}

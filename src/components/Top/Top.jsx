@@ -2,31 +2,31 @@ import "./Top.css";
 
 const Top = () => {
   return (
-    <div className="top">
+    <div className="top-web">
 
-      <div className="second">
-        <div className="item">
+      <div className="second-top">
+        <div className="item-top">
         <a href="#">Internship</a>
         </div>
         <div className="separator">|</div>
-        <div className="item">
+        <div className="item-top">
           <a href="#">Free courses</a>
         </div>
         <div className="separator">|</div>
-        <div className="item">
+        <div className="item-top">
           <a href="#">Professional courses</a>
         </div>
         <div className="separator">|</div>
-        <div className="item">
+        <div className="item-top">
           <a href="#">Placements</a>
         </div>
         <div className="separator">|</div>
-        <div className="item">
+        <div className="item-top">
           <a href="#">Admission</a>
         </div>
       </div>
 
-      <div className="third">
+      <div className="third-top">
         <i className="fa-solid fa-envelope email"></i>
         <a href="mailto:lorem@gmail.com">lorem@gmail.com</a>
         <div className="separator">|</div>

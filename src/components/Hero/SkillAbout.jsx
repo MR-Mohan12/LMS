@@ -7,7 +7,7 @@ import experince from '../../assets/experince.png';
 
 const SkillAbout = () => {
   return (
-   <>
+//    <>
    <div className="skillabout">
     <div>
         <img src={text} alt="imgabout" />
@@ -35,7 +35,7 @@ const SkillAbout = () => {
     </div>
 
     </div>
-   </>
+//    </>
   )
 }
 

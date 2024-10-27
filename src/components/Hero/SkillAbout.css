@@ -5,8 +5,6 @@
     height: 32vh;
     padding: 20px; 
     flex-wrap: wrap; 
-    /* border-bottom: 1px solid #fff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   }
 
 .skillabout > div {
@@ -34,3 +32,52 @@
 
   }
  
+/* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .skillabout {
+    height: auto; 
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+  }
+
+  .skillabout > div {
+    flex: 0 1 100%; 
+    margin: 10px 0; 
+  }
+
+  .skillabout img {
+    height: 60px; 
+  }
+
+  .skillabout p {
+    font-size: 14px; 
+  }
+}
+
+
+
+
+
+/* Styles for phones (480px and below) */
+@media (max-width: 480px) {
+  .skillabout {
+    flex-direction: column; 
+    height: auto; 
+    padding: 15px; 
+  }
+
+  .skillabout > div {
+    flex: 0 1 100%; 
+    margin: 10px 0; 
+  }
+
+  .skillabout img {
+    height: 85px; 
+  }
+
+  .skillabout p {
+    font-size: 12px; 
+  }
+}

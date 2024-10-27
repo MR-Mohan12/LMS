@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import './Reviews.css';
 import Slider from 'react-slick';
@@ -14,7 +15,6 @@ const Reviews = () => {
         { name: 'Sara Lee', review: 'Very satisfied with the quality and service.' },
         { name: 'Tom Brown', review: 'Exceeded my expectations! Great value for money.' },
         { name: 'Lisa White', review: 'Simply the best. Excellent results every time.' },
-        { name: 'Lisa White', review: 'Simply the best. Excellent results every time.' },
     ];
 
     const settings = {
@@ -25,16 +25,13 @@ const Reviews = () => {
         slidesToScroll: 1,
         arrows: true,
         customPaging: (i) => {
-            const totalSlides = Math.ceil(reviews.length / 1); // Total slides based on 1 review per slide
-            const dotIndex = Math.floor(currentSlide / 1) % Math.min(3, totalSlides); // Ensure only 3 dots
-
             return (
                 <div
                     style={{
                         width: '10px',
                         height: '10px',
                         borderRadius: '50%',
-                        backgroundColor: i === dotIndex ? '#00bcd4' : '#ddd', 
+                        backgroundColor: currentSlide === i ? '#00bcd4' : '#ddd', 
                         margin: '0 5px',
                         transition: 'background-color 0.3s ease',
                     }}
@@ -42,19 +39,21 @@ const Reviews = () => {
             );
         },
         appendDots: (dots) => (
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    paddingTop: '20px',
-                }}
-            >
+            <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '20px' }}>
                 <ul style={{ display: 'flex', margin: '0', padding: '0' }}>{dots}</ul>
             </div>
         ),
         afterChange: (current) => {
-            setCurrentSlide(current); // Update currentSlide on change
+            setCurrentSlide(current);
         },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
 
     return (

@@ -51,9 +51,7 @@ h2 {
     transition: transform 0.3s;
 }
 
-/* .card:hover {
-    transform: scale(1.02);
-} */
+
 
 .img
 {
@@ -132,4 +130,61 @@ h2 {
 .explore-button:hover {
    color: #00bcd4;
    text-decoration: none;
+}
+
+
+
+
+/* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column; 
+    }
+
+    .tabs p {
+        padding: 10px; 
+        font-size: 16px;
+        margin: 5px 0; 
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+/* Styles for phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .offerings-container {
+        padding: 10px; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    .tabs p {
+        font-size: 14px; 
+    }
+
+    .card {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+
+    .img {
+        margin: 10px;
+    }
+
+    .card-body h3 {
+        font-size: 1.2rem; 
+    }
+
+    .card-body p {
+        font-size: 0.9rem; 
+    }
+
+    .explore-button {
+        font-size: 10px; 
+        padding: 5px 10px; 
+    }
 }

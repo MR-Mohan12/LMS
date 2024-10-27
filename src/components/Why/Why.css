@@ -37,3 +37,44 @@
     font-weight: 600;
   }
   
+
+  /* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .why-skillvity h1 {
+      margin-left: 30px; 
+      font-size: 26px; 
+  }
+
+  .skilvity-about {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skilvity-about img {
+      width: 150px; 
+  }
+
+  .skilvity-about h2 {
+      font-size: 16px; 
+  }
+}
+
+/* Styles for phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .why-skillvity h1 {
+      margin-left: 15px;
+      font-size: 22px; 
+      text-align: center; 
+  }
+
+  .skilvity-about {
+      grid-template-columns: 1fr; 
+  }
+
+  .skilvity-about img {
+      width: 120px; 
+  }
+
+  .skilvity-about h2 {
+      font-size: 14px; 
+  }
+}

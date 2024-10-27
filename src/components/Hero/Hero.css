@@ -12,7 +12,7 @@
   padding-left: 100px;
   
   
-    margin-top: 90px;   /* after the navbar scroll css */
+    margin-top: 90px;   
   /* border-bottom: 2px solid #fff; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
@@ -34,8 +34,6 @@
   padding-top: 10px;
     font-size: 14px;
    line-height: 1.5; 
-  /* word-spacing: 0px; 
-  letter-spacing: 0px; */
 }
 
 .hero-buttons {
@@ -76,4 +74,59 @@
 .hero-buttons button:nth-child(2):hover {
     background-color: #4397FC;
     color: #03344d;
+}
+
+
+
+/* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; 
+    padding-left: 40px; 
+    margin-top: 80px;
+  }
+
+  .head h1 {
+    font-size: 28px; 
+  }
+
+  .head p {
+    font-size: 13px; 
+  }
+
+  .hero-buttons button {
+    padding: 4px 20px; 
+    font-size: 13px; 
+  }
+}
+
+/* Styles for phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh; 
+    padding-left: 20px; 
+    margin-top: 70px;
+  }
+
+  .head {
+    margin-top: 40px;
+  }
+
+  .head h1 {
+    font-size: 22px; 
+  }
+
+  .head p {
+    font-size: 12px; 
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  .hero-buttons button {
+    padding: 4px 16px; 
+    font-size: 12px; 
+  }
 }

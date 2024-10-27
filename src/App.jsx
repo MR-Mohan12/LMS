@@ -14,7 +14,7 @@ import Why from './components/Why/Why';
 const App = () => {
   return (
     <div>
-      <Top/>
+         <Top/>
       <Navbar/>
       <Hero/>
       <Career/>

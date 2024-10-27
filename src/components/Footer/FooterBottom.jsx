@@ -1,5 +1,8 @@
 import './Footer.css'
 import fb from "../../assets/fb.png";
+import insta from "../../assets/Insta.png";
+import youtube from "../../assets/youtube.png";
+import linkdin from "../../assets/linkdin.png";
 
 const FooterBottom = () => {
   return (
@@ -14,9 +17,10 @@ const FooterBottom = () => {
         <div className="footer-top-left">
           <div className="social-icons">
             <img src={fb} alt="" />
-            <img src={fb} alt="" />
-            <img src={fb} alt="" />
-            <img src={fb} alt="" />
+            <img src={insta} alt="" />
+            <img src={youtube} alt="" />
+            <img src={linkdin} alt="" />
+            
           </div>
         </div>
       </div>

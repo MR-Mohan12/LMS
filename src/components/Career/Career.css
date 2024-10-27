@@ -92,3 +92,86 @@
     color: white;
   }
   
+/* Styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .career {
+    padding: 40px 15px; 
+  }
+
+  .career h1 {
+    margin-left: 30px; 
+    font-size: 1.8rem;
+    margin-bottom: 30px; 
+  }
+
+  .career-about {
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 20px; 
+  }
+
+  .career-about div {
+    width: 100%;
+    padding: 15px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  .career-about div h1 {
+    font-size: 1.3rem; 
+  }
+
+  .career-about div p {
+    font-size: 0.9rem; 
+    margin-bottom: 10px; 
+  }
+
+  .counsel-btn {
+    margin-top: 30px; 
+  }
+
+  .counsel-btn button {
+    padding: 8px 18px; 
+    font-size: 1rem; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .career {
+    padding: 30px 10px; 
+  }
+
+  .career h1 {
+    margin-left: 10px; 
+    font-size: 1.5rem; 
+    margin-bottom: 20px; 
+  }
+
+  .career-about {
+    flex-direction: column; 
+    gap: 15px; 
+  }
+
+  .career-about div {
+    width: 100%; 
+    padding: 15px; 
+  }
+
+  .career-about div h1 {
+    font-size: 1.2rem; 
+  }
+
+  .career-about div p {
+    font-size: 0.8rem; 
+  }
+
+  .counsel-btn {
+    margin-top: 20px; 
+  }
+
+  .counsel-btn button {
+    padding: 6px 15px; 
+    font-size: 0.9rem; 
+  }
+}

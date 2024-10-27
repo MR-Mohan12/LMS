@@ -1,9 +1,10 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,12 +22,23 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
       <div className="logo">
         <a href="#"><img src={logo} alt="LogoImg" /></a>
       </div>
-      <div className="ul">
+
+      
+      <div className="hamburger" onClick={toggleMenu}>
+        <i className={`fa ${isMenuOpen ? 'fa-times' : 'fa-bars'}`} aria-hidden="true"></i>
+      </div>
+
+      
+      <div className={`ul ${isMenuOpen ? 'open' : ''}`}>
         <ul>
           <li><a href="#">Home</a><i className="fa-solid fa-chevron-down"></i></li>
           <li><a href="#">Courses</a><i className="fa-solid fa-chevron-down"></i></li>
@@ -35,65 +47,12 @@ const Navbar = () => {
           <li><a href="#">Resources</a><i className="fa-solid fa-chevron-down"></i></li>
           <li><a href="#">Institutional</a><i className="fa-solid fa-chevron-down"></i></li>
           <li><a href="#">About Us</a><i className="fa-solid fa-chevron-down"></i></li>
+          <li className='btns btn enquire-now'><a href="#">Enquire Now</a></li>
+          <li className='btns btn learner-login'><a href="#">Learner Login</a></li>
         </ul>
-      </div>
-      <div className="btns">
-        <button>Enquire Now</button>
-        <button>Learner Login</button>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-
-
-
-// import "./Navbar.css";
-// import logo from "../../assets/logo.png";
-
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <div className="logo">
-//       <a href="#"><img src={logo} alt="LogoImg" /></a>  
-//       </div>
-//       <div className="ul">
-//         <ul>
-//           <li>
-//             <a href="#">Home</a> <i className="fa-solid fa-chevron-down"></i>
-//           </li>
-//           <li>
-//             <a href="#">Courses </a>
-//             <i className="fa-solid fa-chevron-down"></i>
-//           </li>
-//           <li>
-//             <a href="#">Blogs</a> <i className="fa-solid fa-chevron-down"></i>
-//           </li>
-//           <li>
-//             <a href="#">Placement </a>{" "}
-//             <i className="fa-solid fa-chevron-down"></i>
-//           </li>
-//           <li>
-//             <a href="#"> Resources </a>{" "}
-//             <i className="fa-solid fa-chevron-down"></i>
-//           </li>
-//           <li>
-//             <a href="#">Institutional </a>{" "}
-//             <i className="fa-solid fa-chevron-down"></i>
-//           </li>
-//           <li>
-//             <a href="#"> About Us </a>
-//             <i className="fa-solid fa-chevron-down"></i>
-//           </li>
-//         </ul>
-//       </div>
-//       <div className="btns">
-//         <button>Enquire Now</button>
-//         <button>Learner Login</button>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

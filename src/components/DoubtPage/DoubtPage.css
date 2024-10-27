@@ -139,3 +139,53 @@
   
 /*  */
   
+
+/* Media Queries for Phones and Tablets */
+@media (max-width: 768px) {
+  .doubtPage {
+      padding: 20px 0; 
+  }
+
+  .doubtpage-text h1 {
+      font-size: 24px; 
+  }
+
+  .doubtpage-text h2 {
+      font-size: 18px; 
+  }
+
+  .doubtpage-text input.email{
+     padding: 6px 18px;
+  }
+  .doubtpage-text input.email,
+  .doubtpage-text input[type="submit"] {
+      width: 90%; 
+      max-width: none; 
+      margin-bottom: 10px; 
+  }
+
+  .doubtquestion {
+      flex-direction: column;
+      align-items: center; 
+  }
+
+  .leftside,
+  .rightside {
+      width: 100%; 
+  }
+
+  .faq-item h1 {
+      font-size: 18px;
+  }
+
+  .contact-doubt {
+      flex-direction: column; 
+      align-items: center; 
+      padding: 15px; 
+  }
+
+  .contact-doubt h1 {
+      font-size: 20px; 
+      text-align: center; 
+  }
+}
